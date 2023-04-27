@@ -1,31 +1,43 @@
 import PropTypes from 'prop-types';
+import {
+  ProfileBlock,
+  ProfileInfo,
+  Avatar,
+  Username,
+  Tag,
+  Location,
+  StatsList,
+  StatItem,
+  StatLabel,
+  StatQuantity,
+} from 'components/Profile/Profile.styled';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <ProfileBlock>
+      <ProfileInfo>
+        <Avatar src={avatar} alt={username} />
+        <Username>{username}</Username>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </ProfileInfo>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <StatsList>
+        <StatItem>
+          <StatLabel>Followers</StatLabel>
+          <StatQuantity>{followers}</StatQuantity>
+        </StatItem>
+        <StatItem>
+          <StatLabel>Views</StatLabel>
+          <StatQuantity>{views}</StatQuantity>
+        </StatItem>
+        <StatItem>
+          <StatLabel>Likes</StatLabel>
+          <StatQuantity>{likes}</StatQuantity>
+        </StatItem>
+      </StatsList>
+    </ProfileBlock>
   );
 };
 
