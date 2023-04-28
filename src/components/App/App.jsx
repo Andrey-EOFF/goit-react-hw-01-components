@@ -1,10 +1,10 @@
 import Profile from 'components/Profile/Profile';
 import Statistics from 'components/Statistics/Statistics';
 import FriendList from 'components/FriendList/FriendList';
+import AppStyled from 'components/App/App.styled';
 import user from 'data/user';
 import data from 'data/data';
-import friends from "data/friends";
-import AppStyled from 'components/App/App.styled';
+import friends from 'data/friends';
 
 const App = () => {
   return (
@@ -18,24 +18,22 @@ const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
-      <FriendList name={friends.name} />
+      <FriendList friends={friends} />
     </AppStyled>
   );
 };
 
 export default App;
 
-
 // clg
 // console.log(object)
 
 // nfn
 // const name = (params) => {
-  
-// }
 
+// }
 
 // anfn
 // (params) => {
-  
+
 // }
