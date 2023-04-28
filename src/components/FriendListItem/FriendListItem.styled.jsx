@@ -16,7 +16,7 @@ const StatusIndicator = styled.div`
   border-radius: 50%;
   margin-right: 10px;
   ${({ isOnline }) =>
-    isOnline ? `background-color: #4caf50;` : `background-color: #f44336;`}
+    isOnline ? `background-color: #309e33;` : `background-color: #de2d20;`};
 `;
 
 const Avatar = styled.img`
@@ -27,7 +27,7 @@ const Avatar = styled.img`
 `;
 
 const Name = styled.p`
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
 `;
 
