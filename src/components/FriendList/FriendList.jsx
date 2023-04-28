@@ -1,5 +1,7 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => {
-  return <ul class="friend-list"></ul>;
+    return <ul className="friend-list"> { <li>{ friends[0] }</li>}</ul>;
 };
+
+export default FriendList;
