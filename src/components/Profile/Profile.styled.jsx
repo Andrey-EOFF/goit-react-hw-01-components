@@ -19,6 +19,7 @@ const Avatar = styled.img`
   width: 100%;
   max-width: 200px;
   border-radius: 50%;
+  background-color: #e3ff10c1;
 `;
 
 const Username = styled.p`

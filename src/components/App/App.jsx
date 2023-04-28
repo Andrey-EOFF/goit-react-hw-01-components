@@ -1,5 +1,5 @@
 import Profile from 'components/Profile/Profile';
-import user from 'json/user';
+import user from 'data/user';
 import AppStyled from 'components/App/App.styled';
 
 const App = () => {
