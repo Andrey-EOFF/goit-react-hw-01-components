@@ -6,7 +6,7 @@ import {
   Name,
 } from 'components/FriendListItem/FriendListItem.styled';
 
-const FriendListItem = ({ avatar, name, isOnline, id }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <Card>
       <StatusIndicator isOnline={isOnline}></StatusIndicator>
